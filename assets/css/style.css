@@ -1,0 +1,83 @@
+.container {
+    background-image: url("../images/rainbow.jpg");
+    background-size: 100%;
+    background-blend-mode: color-dodge;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.title-box {
+    background-color: coral;
+    color: white;
+}
+
+.instruction-box {
+    background-color: burlywood;
+    color: green;
+}
+
+#target-number {
+    background-color: green;
+    font-size: 24px;
+    padding: 15px 20px 15px 20px;
+}
+
+.target-box {
+    background-size: 200px;
+}
+
+.w-l-box {
+    background-color: gray;
+    font-size: 10px;
+    padding: 5px 20px 5px 5px;
+}
+
+#blue-crystal {
+    background-image: url('../images/blue-small.jpg');
+    background-size: 200px 200px;
+    height: 204px;
+    width: 184px;
+}
+
+#red-crystal {
+    background-image: url('../images/red.jpg');
+    background-size: 200px 200px;
+    height: 204px;
+    width: 184px;
+}
+
+#green-crystal {
+    background-image: url('../images/green.png');
+    background-size: 200px 200px;
+    height: 204px;
+    width: 184px;
+}
+
+#purple-crystal {
+    background-image: url('../images/purple.png');
+    background-size: 200px 200px;
+    height: 204px;
+    width: 184px;
+}
+
+button {
+    display: inline-block;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 130px;
+}
+
+#running-total {
+    background-color: green;
+    font-size: 24px;
+    padding: 15px 20px 15px 20px;
+}
+
+#fixed-score-message {
+    background-color: green;
+    font-size: 24px;
+    padding: 15px 20px 15px 20px;
+    margin-top: 15px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Game</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylsheet" type="text/css" href="assets/css/reset.css">
+    <!-- We need to bring in the bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Almost all projects use external css style sheets.  Just do it.-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+</head>
+
+<body class="page-background">
+    <div class="container">
+        <!--Six rows appear in the demo screen-->
+        <div class="row">
+            <!--Row 1, the Crystal Collector title box-->
+            <div class="col-md-4">
+                <h1 class="title-box">CrystalsCollector!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <!--Row 2, the instructions title box-->
+            <div class="col-md-6">
+
+                <div class="instruction-box">
+                    <p>You will be given a random number at the start of the game.</p>
+
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points ot your total score. </p>
+
+                    <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+                    </p>
+
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+
+                    <p>Each time when the game starts, the game will change the value of each crystal.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--computer random number/target box and wins/losses boxes-->
+            <div class="col-md-3">
+                <div class="target-box">
+                    <p id="target-number">00</p>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="w-l-box">
+                    <p id="winner-loser"></p>
+                    <p id="wins-line">Wins: </p>
+                    <p id="losses-line">Losses: </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--crystal images as buttons-->
+
+            <div class="col-md-2">
+                <button id="blue-crystal" class="crystal" value="0"> </button>
+            </div>
+            <div class="col-md-2">
+                <button id="red-crystal" class="crystal" value="1"> </button>
+            </div>
+            <div class="col-md-2">
+                <button id="green-crystal" class="crystal" value="2"> </button>
+            </div>
+            <div class="col-md-2">
+                <button id="purple-crystal" class="crystal" value="3"> </button>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <p id="fixed-score-message">Your score is: </p>
+            </div>
+            <!--"Your score is: " banner-->
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <p id="running-total">0</p>
+            </div>
+            <!--running total updated by crystal pushes-->
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
